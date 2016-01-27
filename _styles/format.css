@@ -1,0 +1,46 @@
+body {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#content {
+    overflow: auto;
+    height: 100%;
+}
+
+#nav, #contact {
+    padding: 10px;
+    margin: 10px;
+}
+
+#pic {
+    padding: 10px;
+    margin: 10px;
+}
+
+#contact li {
+    padding: 5px;
+}
+
+.hello {
+    margin: 10px;
+}
+
+.c1, .c2, .c3 {
+    width: 300px;
+    float: left;
+    margin: 10px;
+}
+
+.about {
+    width: 500px;
+}
+
+#nav li, #contact li {
+    display: inline;
+    padding: 5px;
+}
+
+
+
+

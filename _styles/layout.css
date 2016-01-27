@@ -1,0 +1,64 @@
+#header {
+    text-align: center;
+    font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+}
+
+#nav, #contact {
+    background-color: #efefef;
+}
+
+#pic {
+    background-color: #efefef;
+}
+
+
+.hello {
+    font-weight: 500;
+}
+
+.c1, .c2, .c3 {
+    font-weight: 500;
+}
+
+.about {
+    font-size: 30px;
+}
+
+#nav li {
+    color: black;
+}
+
+#nav a:hover {
+    background-color: rgba(0, 51, 153, 0.5);
+}
+
+#nav a {
+    color: black;
+    font-weight: 400;
+    font-size: 19px;
+    text-decoration: none;
+}
+
+#h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: #000035;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 36px;
+    letter-spacing: 4px; 
+}
+ 
+h2 {
+    color: #CC0000;
+}
+
+h1, h2, p, ul li {
+     font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+}
