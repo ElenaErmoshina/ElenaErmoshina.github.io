@@ -4,41 +4,71 @@
 <meta charset=utf-8>
 <meta name=author content="elenapavlovic">
 <title>My portfolio</title>
+<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+<link rel="stylesheet" type="text/css" href="styles/skeleton.css">
 <link rel="stylesheet" type="text/css" href="styles/format.css">
 <link rel="stylesheet" type="text/css" href="styles/layout.css">
+<link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow74.js"></script>
+<link rel="stylesheet" href="styles/animate.css">
+<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+	$(function(){
+		var mouseIn = function(){
+			$(this).find("a").addClass("animated pulse");
+			//console.debug($(this).find("a"));
+			$("#h1").addClass("animated pulse");
+			$("#l2").addClass("animated pulse");
+		};
+		var mouseOut = function(){
+			$(this).find("a").removeClass("animated pulse");
+			$("#h1").removeClass("animated pulse");
+			$("#l2").removeClass("animated pulse");
+		};
+		$(".menulist > li").hover(mouseIn, mouseOut);
+	});
+	
 
+	
+</script>
+
+
+<style>
+	@media (max-width:48em){
+    .container { width: 100%; }
+  	nav ul { width: 100%; font-weight: normal; }
+  	nav ul li a { padding: 3px 3px; display: block; }
+}
+
+</style>
 
 </head>
 
 <body>
-	<div id="header">
+	<header>
 		<h1 id="h1"><a href="index.html">Elena Pavlovic</a></h1>	
-		<div id="nav">
-			<ul>
-				<li><a href="index.html" id="nav">ABOUT</a></li>
-				<li><a href="" id="nav">PORTFOLIO</a></li>
-				<li><a href="exercises.html" id="nav">EXERCISES</a></li>
-				<li><a href="resume.html" id="nav">RESUME</a></li>
+		<nav>
+			<ul class="menulist clearfix">
+				<li class="four columns"><a href="index.html" id="nav">ABOUT</a></li>
+				<li class="four columns"><a href="" id="nav">PORTFOLIO</a></li>
+				<li class="four columns"><a href="resume.html" id="nav">RESUME</a></li>
 			</ul>
-		</div>
-	</div>
-	<div id="content">
+		</nav>
+	</header>
+	<section>
 		<div id="pic">
 			<img src="images/pic3.jpg" alt="wallpaper">
 		</div>
-		
 		<div class="c1">
-			<h2>Coming soon!</h2>
+			<h2><a href="storyboard/index.html">Storytelling</a></h2>
 		</div>
-		
-	</div>
-	<footer>
-		<div id="contact">
-			<ul>
-				<li><a href="tel:+14253816011">(425)381-6011</a></li>
-				<li><a href="mailto:lena@pavlovic.ru">lena@pavlovic.ru</a></li>
-			</ul>				
-		</div>		
+	</section>
+		<footer>
+			<ul class="contact">
+				<li>&copy 2016 Elena Pavlovic</li>
+			</ul>
 	</footer>	 
 </body>
 </html>

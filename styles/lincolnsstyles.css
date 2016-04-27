@@ -1,0 +1,47 @@
+h1 {
+	font-family: Pinyon Script;
+	font-size: 65px;
+	line-height: 90px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 20px;
+	line-height: 25px;
+	word-spacing: 15px;
+	letter-spacing: 10px;
+	font-variant: small-caps;
+	text-align: center;
+	margin-bottom: 14px;
+}
+
+h3 {
+	margin-top: 14px;
+	margin-bottom: 24px;
+	text-align: center;
+}
+
+body {
+	font-family: Crimson Roman, Georgia, Times, Serif;
+	margin: 20px 10%;
+}
+p {
+	font-size: 18px;
+	line-height: 24px;	
+}
+
+h3+p::first-letter {
+	font-family: times, serif;
+	font-size: 90px;
+	float: left;
+	line-height: 0.70;
+	padding: 6px 3px 0 0;
+}
+h3+p::first-line {
+	font-variant: small-caps;
+	letter-spacing: 3px;
+}
+p+p {
+	margin-top: 18px;
+	text-indent: 180px;
+}
