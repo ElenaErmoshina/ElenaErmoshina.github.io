@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Univia Pro Thin';
+    font-style: normal;
+    font-weight: 700;
+    src: local('UniviaPro-Thinlt'), local('UniviaPro-Thin'),
+    url(/site/wwwroot/RolandCloudBase/Fonts/UniviaPro-Regular.otf) format('otf');
+}
+@font-face {
+    font-family: 'Univia Pro Ultra Light';
+    font-style: normal;
+    font-weight: 600;
+    src: local('UniviaPro-UltraLightlt'), local('UniviaPro-UltraLight'),
+    url(/site/wwwroot/RolandCloudBase/Fonts/UniviaPro-UltraLight.otf) format('otf');
+}
+@font-face {
+    font-family: 'Univia Pro Light';
+    font-style: normal;
+    font-weight: 400;
+    src: local('UniviaPro-Lightlt'), local('UniviaPro-Light'),
+    url(/site/wwwroot/RolandCloudBase/Fonts/UniviaPro-Light.otf) format('otf');
+}
+@font-face {
+    font-family: 'Univia Pro Book';
+    font-style: normal;
+    font-weight: 700;
+    src: local('UniviaPro-Booklt'), local('UniviaPro-Book'),
+    url(/site/wwwroot/RolandCloudBase/Fonts/UniviaPro-Book.otf) format('otf');
+}
+
+@font-face {
+    font-family: 'Univia Pro Regular';
+    font-style: normal;
+    font-weight: 700;
+    src: local('UniviaPro-Regularlt'), local('UniviaPro-Regular'),
+    url(/site/wwwroot/RolandCloudBase/Fonts/UniviaPro-Regular.otf) format('otf');
+}
+
+@font-face {
+    font-family: 'Univia Pro Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: local('UniviaPro-Boldlt'), local('UniviaPro-Bold'),
+    url(/site/wwwroot/RolandCloudBase/Fonts/UniviaPro-Bold.otf) format('otf');
+}
+
+@font-face {
+    font-family: 'Univia Pro Black';
+    font-style: normal;
+    font-weight: 700;
+    src: local('UniviaPro-Blacklt'), local('UniviaPro-Black'),
+    url(/site/wwwroot/RolandCloudBase/Fonts/UniviaPro-Black.otf) format('otf');
+}
+
+@font-face {
+    font-family: 'Univia Pro Ultra';
+    font-style: normal;
+    font-weight: 700;
+    src: local('UniviaPro-Ultralt'), local('UniviaPro-Ultra'),
+    url(/site/wwwroot/RolandCloudBase/Fonts/UniviaPro-Book.otf) format('otf');
+}
+

@@ -1,0 +1,50 @@
+/* Block colors for layout exercise */
+
+header,nav,section,sidebar,footer {
+	text-align: center;
+	border: gray solid thin;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.1em;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+.l2 {
+	width: 700px;
+	margin: auto;
+}
+
+header {
+	background-color:#d8930a;
+	height: 90px;
+	width: 700px;
+	margin: auto;
+	margin-top: 20px;
+	}
+
+nav {
+	background-color: #11af1f;
+	width: 250px;
+	height: 60px;
+	margin: -75px 0 15px 420px;
+	}
+
+.s1, .s2, .s3 {
+	background-color: #76aaf3;
+}
+
+.s1 {
+	width: 700px;
+	height: 300px;
+	margin: 30px auto;
+	}
+		
+.s2, .s3 {
+	width: 336px;
+	height: 300px;
+	display: inline-block;
+	}
+	
+.s3 {
+	margin-left: 20px;
+}

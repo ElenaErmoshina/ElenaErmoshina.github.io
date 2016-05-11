@@ -1,0 +1,49 @@
+/* Block colors for layout exercise */
+
+header,nav,section,sidebar,footer {
+	text-align: center;
+	border: gray solid thin;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.1em;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+.l3 {
+	width: 700px;
+	margin: auto;
+}
+
+header {
+	background-color:#d8930a;
+	height: 100px;
+	margin-top: 70px;
+	}
+
+nav:not(#page-level) {
+	background-color: #11af1f;
+	height: 40px;
+	margin: -145px 0 0 420px;
+	}
+	
+nav#page-level {
+	background-color: #11af1f;
+	height: 60px;
+	margin-top: 110px;
+	margin-bottom: 10px;
+}
+
+.a, .b, .c {
+	background-color: #76aaf3;
+	display: inline-block;
+	width: 225px;
+	height: 225px;
+}
+
+.a {
+	margin-right: 5px;
+}
+
+.c {
+	margin-left: 5px;
+}

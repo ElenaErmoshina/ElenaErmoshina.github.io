@@ -3,62 +3,108 @@
 <head>
 <meta charset=utf-8>
 <meta name=author content="elenapavlovic">
-<title>My portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EP Portfolio</title>
+<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+<link rel="stylesheet" type="text/css" href="styles/skeleton.css">
+<link rel="stylesheet" type="text/css" href="styles/font.css">
 <link rel="stylesheet" type="text/css" href="styles/format.css">
 <link rel="stylesheet" type="text/css" href="styles/layout.css">
+<link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+<link rel="stylesheet" href="styles/animate.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow74.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+		$(function(){
+		var mouseIn = function(){
+			$(this).find("a").addClass("animated pulse");
+			//console.debug($(this).find("a"));
+			$("#h1").addClass("animated pulse");
+			$("#l2").addClass("animated pulse");
+		};
+		var mouseOut = function(){
+			$(this).find("a").removeClass("animated pulse");
+			$("#h1").removeClass("animated pulse");
+			$("#l2").removeClass("animated pulse");
+		};
+		$(".menulist > li").hover(mouseIn, mouseOut);
+	});
+	
+</script>
+
+<style>
+	@media (max-width:48em){
+    .container { width: 100%; }
+  	nav ul { width: 100%; font-weight: normal; }
+  	nav ul li a { padding: 3px 3px; display: block; }
+}
+
+</style>
 
 
 </head>
 
 <body>
-	<div id="header">
+	<header>
 		<h1 id="h1">Elena Pavlovic</h1>	
-		<div id="nav">
-			<ul>
-				<li><a href="index.html" id="nav">ABOUT</a></li>
-				<li><a href="portfolio.html" id="nav">PORTFOLIO</a></li>
-				<li><a href="exercises.html" id="nav">EXERCISES</a></li>
-				<li><a href="resume.html" id="nav">RESUME</a></li>
+		<div class="container">
+		<nav>
+			<ul class="menulist clearfix">
+				<li class="four columns"><a href="index.html">ABOUT</a></li>
+				<li class="four columns"><a href="portfolio.html">PORTFOLIO</a></li>
+				<li class="four columns"><a href="resume.html">RESUME</a></li>
 			</ul>
+		</nav>
 		</div>
-	</div>
-	<div id="content">
+	</header>
+	<section>
 		<div id="pic">
 			<img src="images/pic2.jpg" alt="wallpaper">
 		</div>
 		<div class="hello">
-			<h2>Hello</h2>
-			<p>I am a developer and designer from Seattle.</p>
+			<h2>Hi</h2>
+			<p>I am a web developer from Seattle.</p>
 		</div>	
-		<div class="c1">
+		<article>
 			<h2>Background</h2>
-			<p>I graduated from Moscow State University with the degree in literature.</p>
+			<p>I graduated from Moscow State University with the degree in linguistics and literature.</p>
 			<p>I always had an interest toward design in information technologies, and now I'm pursuing the degree in Web Application Programming.</p>
-		</div>
-		<div class="c2">
+			<p>I'm a bookworm, fan of good food and red wine, love to cook and travel.</p>
+		</article>
+		<article>
 			<h2>Skills</h2>
-			<p>I have an experince working with:</p>
+			<p>I have an experience working with:</p>
 			<ul>
 				<li>HTML / CSS</li>
 				<li>Java</li>
 				<li>JavaScript</li>
 				<li>C#</li>
+				<li>ASP.NET</li>
 				<li>Photoshop</li>
 				<li>Illustrator</li>
 			</ul>
-		</div>
-		<div class="c3">
-			<h2>Personal projects</h2>
-			<p>Check my personal projects <a href="pprojects.html">here:</a></p>
-		</div>
-	</div>
+		</article>
+		<article>
+			<h2>Resume</h2>
+			<p>Check my resume<a href="docs/resume.pdf" download> here.</a></p>
+		</article>
+	</section>	
 	<footer>
-		<div id="contact">
-			<ul>
-				<li><a href="tel:+14253816011">(425)381-6011</a></li>
-				<li><a href="mailto:lena@pavlovic.ru">lena@pavlovic.ru</a></li>
+			<img class="image smallimage"  src="images/butterfly.png">	
+			<ul class="contact">
+				<li>&copy 2016 Elena Pavlovic</li>
 			</ul>
-		</div>	
-	</footer>	 
+			<div class="icons">
+				<a href="mailto:lena@pavlovic.ru"><span class="icon-mail"></span></a>
+				<a href="https://www.facebook.com/yelena.ermoshina"<span class="icon-facebook2"></span></a>
+				<a href="https://www.instagram.com/fille_de_leda/"><span class="icon-instagram"></span></a>
+				<a href="https://github.com/ElenaErmoshina"><span class="icon-github"></span></a>
+				<a href="https://www.linkedin.com/in/helenepav"><span class="icon-linkedin"></span></a>
+			</div> 
+	</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

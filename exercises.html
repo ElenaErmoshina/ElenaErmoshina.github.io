@@ -1,48 +1,129 @@
-<!doctype html>
-<html lang=en>
+<!DOCTYPE HTML>
+<html>
 <head>
 <meta charset=utf-8>
 <meta name=author content="elenapavlovic">
-<title>My portfolio</title>
-<link rel="stylesheet" type="text/css" href="styles/format.css">
-<link rel="stylesheet" type="text/css" href="styles/layout.css">
-
-
+<title>EP Portfolio</title>
+<link rel="stylesheet" type="text/css" href="exersicescss/style.css"/>
+<link rel="stylesheet" href="styles/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow74.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+	$(function(){
+		var mouseIn = function(){
+			$(this).find("a").addClass("animated pulse");
+			//console.debug($(this).find("a"));
+			$("#h1").addClass("animated pulse");
+			$("#l2").addClass("animated pulse");
+		};
+		var mouseOut = function(){
+			$(this).find("a").removeClass("animated pulse");
+			$("#h1").removeClass("animated pulse");
+			$("#l2").removeClass("animated pulse");
+		};
+		$("#menulist > li").hover(mouseIn, mouseOut);
+	});
+</script>
 </head>
 
 <body>
-	<div id="header">
+	<header>
 		<h1 id="h1"><a href="index.html">Elena Pavlovic</a></h1>	
-		<div id="nav">
-			<ul>
-				<li><a href="index.html" id="nav">ABOUT</a></li>
-				<li><a href="portfolio.html" id="nav">PORTFOLIO</a></li>
-				<li><a href="" id="nav">EXERCISES</a></li>
-				<li><a href="resume.html" id="nav">RESUME</a></li>
+		<nav>
+			<ul id="menulist">
+				<li><a href="index.html">ABOUT</a></li>
+				<li><a href="portfolio.html">PORTFOLIO</a></li>
+				<li><a href="">EXERCISES</a></li>
+				<li><a href="resume.html">RESUME</a></li>
 			</ul>
-		</div>
-	</div>
+		</nav>
+	</header>
+	
+<div id="wrapper">
 	<div id="content">
-		<div id="pic">
-			<img src="images/pic4.jpg" alt="wallpaper">
-		</div>
-		
-		<div class="c1">
-			<h2>Exercises</h2>
-			<ul>
-				<li><a href="cssreviewexercise.html">Exercise 1 - Sandwich Fixin's</a></li>
-				<li><a href="start_veggies/index.html">Exercise 2 - Veggies List</a></li>
-			</ul>
-		</div>
-		
+		<ul id="posters">
+			<li>
+				<img src="exercisesimages/sandwich.jpg" alt="sandwich" />
+				<div class="info">
+					<h3>Exersice 1</h3>
+					<p>Sandwich Fixin</p>
+					<a href="cssreviewexercise.html">More info</a>
+				</div>
+			</li>
+			<li>
+				<img src="exercisesimages/veggies.jpg" alt="veggies" />
+				<div class="info">
+					<h3>Exercise 2</h3>
+					<p>Veggies List</p>
+					<a href="start_veggies/index.html">More info</a>
+				</div>
+			</li>
+			<li>
+				<img src="exercisesimages/boxes.jpg" alt="boxes" />
+				<div class="info">
+					<h3>Exercise 3</h3>
+					<p>Positioning Boxes</p>
+					<a href="positioning/positioning.html">More info</a>
+				</div>
+			</li>
+			<li>
+				<img src="exercisesimages/lincoln.jpg" alt="lincolnaddress" />
+				<div class="info">
+					<h3>Exercise 4</h3>
+					<p>Lincoln's Address</p>
+					<a href="lincolnsaddress/lincolnsaddress.html">More info</a>
+				</div>
+			</li>
+			<li>
+				<img src="exercisesimages/pinwheel.jpg" alt="pinwheel" />
+				<div class="info">
+					<h3>Exercise 5</h3>
+					<p>Pinwheel Animation</p>
+					<a href="pinwheel/start.html">More info</a>
+				</div>
+			</li>			
+			<li>
+				<img src="exercisesimages/bunny.jpg" alt="bunny" />
+				<div class="info">
+					<h3>Exercise 6</h3>
+					<p>Bunny love animation</p>
+					<a href="bunny_love/start.html">More info</a>
+				</div>
+			</li>			
+			<li>
+				<img src="exercisesimages/grid.jpg" alt="grandcanyon" />
+				<div class="info">
+					<h3>Exercise 7</h3>
+					<p>Grid Layout</p>
+					<a href="grid/stylin_grid.html">More info</a>
+				</div>
+			</li>
+			<li>
+				<img src="exercisesimages/heels.jpg" alt="heels" />
+				<div class="info">
+					<h3>Exercise 8</h3>
+					<p>Popups</p>
+					<a href="start_popup/figure6.24.html">More info</a>
+				</div>
+			</li>
+			<li>
+				<img src="exercisesimages/responsive.jpg" alt="responsivedesign" />
+				<div class="info">
+					<h3>Exercise 9</h3>
+					<p>Responsive Design</p>
+					<a href="responsive_start/responsive.html">More info</a>
+				</div>
+			</li>								
+		</ul>
 	</div>
-	<footer>
-		<div id="contact">
-			<ul>
-				<li><a href="tel:+14253816011">(425)381-6011</a></li>
-				<li><a href="mailto:lena@pavlovic.ru">lena@pavlovic.ru</a></li>
-			</ul>				
-		</div>		
-	</footer>	 
+		<footer>
+			<ul class="contact">
+				<li>&copy 2016 Elena Pavlovic</li>
+			</ul>
+	   </footer>	
+</div>
 </body>
 </html>
