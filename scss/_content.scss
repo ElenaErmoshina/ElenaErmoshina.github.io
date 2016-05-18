@@ -1,0 +1,25 @@
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: #262626;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    
+}
+
+article > ul {
+    font-family: 'Montserrat', sans-serif;
+    color: #262626;
+    font-size: 18px;
+}
+
+@mixin font-size($sizeValue: 1) {
+  font-size: ($sizeValue * 1) + px;
+  font-size: $sizeValue + px;
+}
+
+
+
+
