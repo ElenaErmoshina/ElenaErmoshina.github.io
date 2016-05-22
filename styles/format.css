@@ -30,6 +30,33 @@ article {
     margin: 10px;
 }
 
+.article-wrap {
+    margin: 0 auto;
+}
+
+@media (min-width: 500px) {
+    .article-wrap {
+        max-width: 80%;
+        } 
+}
+
+.wrap {
+    position: relative;
+}
+
+.wrap > p {
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 50px;
+    z-index: 1;
+    font-size: 8rem;
+    color: #ffffff;
+}
+
+img {
+    z-index: 2;
+}
+
 .about {
     width: 500px;
 }

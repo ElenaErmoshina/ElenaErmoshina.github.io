@@ -11,4 +11,15 @@
 			$("#l2").removeClass("animated pulse");
 		};
 		$(".menulist > li").hover(mouseIn, mouseOut);
-	});
+	
+	
+	
+		$('.owl-carousel').owlCarousel({
+		loop:true,
+		margin:10,
+		nav:true,
+		items:1,
+		   });
+	
+});	
+	
