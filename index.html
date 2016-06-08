@@ -10,29 +10,17 @@
 <link rel="stylesheet" type="text/css" href="styles/font.css">
 <link rel="stylesheet" type="text/css" href="styles/format.css">
 <link rel="stylesheet" type="text/css" href="styles/layout.css">
+<link rel="stylesheet" type="text/css" href="styles/main.css">
 <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+<link rel="stylesheet" type="text/css" href="styles/owl.carousel.css">
 <link rel="stylesheet" href="styles/animate.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript" src="http://arrow.scrolltotop.com/arrow74.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script>
-		$(function(){
-		var mouseIn = function(){
-			$(this).find("a").addClass("animated pulse");
-			//console.debug($(this).find("a"));
-			$("#h1").addClass("animated pulse");
-			$("#l2").addClass("animated pulse");
-		};
-		var mouseOut = function(){
-			$(this).find("a").removeClass("animated pulse");
-			$("#h1").removeClass("animated pulse");
-			$("#l2").removeClass("animated pulse");
-		};
-		$(".menulist > li").hover(mouseIn, mouseOut);
-	});
-	
-</script>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Delius+Unicase|Emilys+Candy|Alegreya+Sans+SC' rel='stylesheet' type='text/css'>
+
 
 <style>
 	@media (max-width:48em){
@@ -50,7 +38,7 @@
 	<header>
 		<h1 id="h1">Elena Pavlovic</h1>	
 		<div class="container">
-		<nav>
+		<nav>				
 			<ul class="menulist clearfix">
 				<li class="four columns"><a href="index.html">ABOUT</a></li>
 				<li class="four columns"><a href="portfolio.html">PORTFOLIO</a></li>
@@ -60,13 +48,31 @@
 		</div>
 	</header>
 	<section>
-		<div id="pic">
+		<div id="pic">		
+		<div class="owl-carousel">
+			<div class="wrap">
+				<p>Seattle</p>
 			<img src="images/pic2.jpg" alt="wallpaper">
+			</div>
+			<div class="wrap">
+				<p>Mostar</p>
+			<img src="images/pic3.jpg" alt="wallpaper">
+			</div>
+			<div class="wrap">
+				<p>Orenburg</p>
+			<img src="images/pic4.jpg" alt="wallpaper">
+			</div>
+			<div class="wrap">
+				<p>Russia</p>
+			<img src="images/pic5.jpg" alt="wallpaper">
+			</div>
 		</div>
-		<div class="hello">
-			<h2>Hi</h2>
-			<p>I am a web developer from Seattle.</p>
-		</div>	
+		</div>
+		<div class="article-wrap">
+				<div class="hello">
+					<h2>Hi</h2>
+					<p>I am a web developer from Seattle.</p>
+				</div>	
 		<article>
 			<h2>Background</h2>
 			<p>I graduated from Moscow State University with the degree in linguistics and literature.</p>
@@ -90,6 +96,7 @@
 			<h2>Resume</h2>
 			<p>Check my resume<a href="docs/resume.pdf" download> here.</a></p>
 		</article>
+		</div>
 	</section>	
 	<footer>
 			<img class="image smallimage"  src="images/butterfly.png">	
@@ -104,6 +111,8 @@
 				<a href="https://www.linkedin.com/in/helenepav"><span class="icon-linkedin"></span></a>
 			</div> 
 	</footer>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/site.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
 <script src="js/main.js"></script>
 </body>

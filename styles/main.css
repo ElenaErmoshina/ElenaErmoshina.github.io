@@ -1,0 +1,30 @@
+/* line 1, ../scss/_content.scss */
+p {
+  font-family: 'Montserrat', sans-serif;
+  color: #262626;
+}
+
+/* line 6, ../scss/_content.scss */
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+}
+
+/* line 12, ../scss/_content.scss */
+article > ul {
+  font-family: 'Montserrat', sans-serif;
+  color: #262626;
+  font-size: 18px;
+}
+
+/* line 1, ../scss/_partial.scss */
+#h1 {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+/* line 5, ../scss/_partial.scss */
+nav a {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 3rem;
+  letter-spacing: .5rem;
+}

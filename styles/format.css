@@ -30,6 +30,38 @@ article {
     margin: 10px;
 }
 
+.article-wrap {
+    margin: 0 auto;
+}
+
+@media (min-width: 500px) {
+    .article-wrap {
+        max-width: 80%;
+        } 
+}
+
+.wrap {
+    position: relative;
+}
+
+.wrap > p {
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 50px;
+    z-index: 1;
+    font-size: 6rem;
+    color: #ffffff;
+}
+
+.svg {
+    width: 50px; 
+    height: 50px;
+}
+
+img {
+    z-index: 2;
+}
+
 .about {
     width: 500px;
 }
@@ -49,6 +81,37 @@ nav li{
     width: 500px;
     float: left;
     margin-left: 10px;
+}
+
+li a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #000;
+}
+
+li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #CC0000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+li > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 img {
@@ -79,9 +142,9 @@ footer {
     font-size: 30px;
 }
 
-
 .icons {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 .smallimage {
